@@ -39,3 +39,30 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* 
+.text-gradient {
+  background: linear-gradient(90deg, #4a90e2, #9013fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease-in-out;
+}
