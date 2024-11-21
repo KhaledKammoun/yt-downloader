@@ -6,6 +6,7 @@ import axios from "axios";
 dotenv.config();
 
 import dotenv from "dotenv";
+import DarkModeToggle from "./DarkModeToggle/page";
 const key = process.env.YT_API_KEY;
 const MainPage = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -80,6 +81,9 @@ const MainPage = () => {
           Downloader
         </div>
         {/* Navigation Links - Desktop */}
+        <div>
+          <DarkModeToggle />
+        </div>
         <div className="hidden  items-center justify-between md:flex space-x-4 text-gray-600 dark:text-gray-300">
           <a href="#" className="block md:px-4 transition hover:text-red-500">
             Home
